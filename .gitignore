@@ -1,0 +1,81 @@
+# ========================
+# DATASETS (demasiado grandes para o repo)
+# ========================
+dataset/
+data/
+*.csv
+*.zip
+*.tar
+*.tar.gz
+*.h5
+*.hdf5
+
+# ========================
+# MODELOS TREINADOS
+# ========================
+*.pth
+*.pt
+*.pkl
+*.onnx
+checkpoints/
+models/
+
+# ========================
+# PYTHON
+# ========================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# ========================
+# JUPYTER / KAGGLE
+# ========================
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# ========================
+# AMBIENTES VIRTUAIS
+# ========================
+venv/
+env/
+.env
+.venv/
+
+# ========================
+# CREDENCIAIS (IMPORTANTE)
+# ========================
+kaggle.json
+*.key
+*.token
+secrets.py
+config_local.py
+
+# ========================
+# SISTEMA OPERATIVO
+# ========================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ========================
+# IDEs
+# ========================
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ========================
+# OUTPUTS / LOGS
+# ========================
+logs/
+runs/
+wandb/
+*.log
