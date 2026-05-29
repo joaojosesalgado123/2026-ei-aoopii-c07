@@ -1,8 +1,9 @@
 # ========================
-# DATASETS (demasiado grandes para o repo)
+# DATASETS / DADOS GRANDES
 # ========================
 dataset/
 data/
+datasets/
 *.csv
 *.zip
 *.tar
@@ -16,6 +17,7 @@ data/
 *.pth
 *.pt
 *.pkl
+*.ckpt
 *.onnx
 checkpoints/
 models/
@@ -27,46 +29,58 @@ __pycache__/
 *.py[cod]
 *.pyo
 *.pyd
+*$py.class
 .Python
 *.egg
 *.egg-info/
 dist/
 build/
 .eggs/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# ========================
+# NODE / NEXT.JS
+# ========================
+node_modules/
+.next/
+out/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
 
 # ========================
 # JUPYTER / KAGGLE
 # ========================
 .ipynb_checkpoints/
 *.ipynb_checkpoints
+kaggle.json
 
 # ========================
-# AMBIENTES VIRTUAIS
+# AMBIENTES / CONFIG LOCAL
 # ========================
 venv/
 env/
-.env
 .venv/
+.env
+.env.*
+!.env.example
 
 # ========================
-# CREDENCIAIS (IMPORTANTE)
+# CREDENCIAIS
 # ========================
-kaggle.json
 *.key
 *.token
 secrets.py
 config_local.py
 
 # ========================
-# SISTEMA OPERATIVO
+# SISTEMA OPERATIVO / IDEs
 # ========================
 .DS_Store
 Thumbs.db
 desktop.ini
-
-# ========================
-# IDEs
-# ========================
 .vscode/
 .idea/
 *.swp
@@ -79,3 +93,15 @@ logs/
 runs/
 wandb/
 *.log
+confusion_and_roc.png
+error_samples.png
+results.json
+
+# ========================
+# EXPERIENCIAS LOCAIS
+# ========================
+app.py
+debug_model.py
+teste.py
+foto_real.jpg
+foto_fake.jpg
