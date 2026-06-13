@@ -9,7 +9,7 @@
 
 ## Track
 
-**Track A — Deep Learning**
+**Track A - Deep Learning**
 
 ## Descrição do Projeto
 
