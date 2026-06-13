@@ -1,5 +1,7 @@
 facenet-pytorch
+fastapi
 numpy
 pillow
 torch
 torchvision
+uvicorn

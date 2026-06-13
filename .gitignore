@@ -105,3 +105,6 @@ debug_model.py
 teste.py
 foto_real.jpg
 foto_fake.jpg
+foto_fake_*.jpg
+test_real__*.jpg
+zelensky.jpg

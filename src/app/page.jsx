@@ -46,6 +46,12 @@ function confidenceLabel(probability) {
   return "Pouco provável";
 }
 
+function headlineLabel(isFake, confidence) {
+  if (confidence >= 0.85) return isFake ? "Claramente falsa" : "Claramente real";
+  if (confidence >= 0.65) return isFake ? "Provavelmente falsa" : "Provavelmente real";
+  return isFake ? "Possivelmente falsa" : "Possivelmente real";
+}
+
 async function analyzeImage(file) {
   const apiUrl = process.env.NEXT_PUBLIC_DETECT_API_URL || "http://localhost:8000/predict";
   const formData = new FormData();
@@ -97,7 +103,7 @@ export default function Home() {
       confidence,
       probabilityFake,
       probabilityReal,
-      headline: isFake ? "Provavelmente falsa" : "Provavelmente real",
+      headline: headlineLabel(isFake, confidence),
       description: isFake
         ? "A imagem apresenta sinais compatíveis com geração ou manipulação por IA."
         : "A imagem apresenta sinais mais compatíveis com fotografia real.",
