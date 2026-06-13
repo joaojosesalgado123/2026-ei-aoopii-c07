@@ -38,11 +38,11 @@ A aplicação é composta por:
 
 O sistema usa dois componentes principais que trabalham em sequência:
 
-**1. MTCNN — detetor de faces**
+**1. MTCNN - detetor de faces**
 
 MTCNN (Multi-task Cascaded Convolutional Networks) é um algoritmo especializado em encontrar rostos em fotografias. Quando o utilizador envia uma imagem, o MTCNN procura automaticamente onde está a face, recorta essa região e descarta o resto da imagem (fundo, roupa, etc.). Isto garante que o classificador analisa apenas o rosto, e não elementos irrelevantes da fotografia.
 
-**2. ResNet-50 — classificador**
+**2. ResNet-50 - classificador**
 
 ResNet-50 é uma rede neuronal profunda com 50 camadas, amplamente utilizada em visão computacional. Funciona de forma semelhante ao cérebro humano: foi "ensinada" a reconhecer padrões visuais em milhões de imagens.
 
@@ -77,7 +77,7 @@ O modelo aprendeu padrões visuais específicos presentes nos datasets acima. Is
 - **Consegue detetar** deepfakes produzidos com técnicas semelhantes às dos datasets de treino (face swap, GANs como StyleGAN)
 - **Pode falhar** em deepfakes gerados com tecnologias mais recentes ou métodos muito diferentes dos usados no treino
 - **Pode falhar** em imagens com condições muito diferentes das do treino (iluminação extrema, ângulos incomuns, rostos parcialmente ocultados)
-- **Não é infalível** — como qualquer modelo de classificação, tem uma taxa de erro e não deve ser usado como única fonte de decisão em contextos críticos
+- **Não é infalível** - como qualquer modelo de classificação, tem uma taxa de erro e não deve ser usado como única fonte de decisão em contextos críticos
 
 Em suma, o modelo é tão bom quanto os dados com que foi treinado. Técnicas de deepfake não representadas nos datasets de treino podem não ser detetadas.
 
@@ -86,7 +86,7 @@ Em suma, o modelo é tão bom quanto os dados com que foi treinado. Técnicas de
 ### 1. Clonar o repositório
 
 ```bash
-git clone <repo-url>
+git clone <https://github.com/joaojosesalgado123/2026-ei-aoopii-c07.git>
 cd deepfake-app
 ```
 
