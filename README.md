@@ -66,7 +66,7 @@ O modelo foi treinado com **6 datasets** de naturezas distintas, cobrindo difere
 | **DFDC** | Face Swap | Dataset da competição Deepfake Detection Challenge da Meta |
 | **140K Real and Fake Faces** | GAN | Faces geradas por GAN vs. faces reais do Flickr |
 | **StyleGAN3** | GAN | Faces sintéticas geradas pelo StyleGAN3 da NVIDIA |
-| **FFHQ** | Real | Flickr-Faces-HQ — dataset de referência de faces reais de alta qualidade |
+| **FFHQ** | Real | Flickr-Faces-HQ dataset de referência de faces reais de alta qualidade |
 
 ### Limitações do modelo
 
